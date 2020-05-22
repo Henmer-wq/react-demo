@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 //
 // //
 // // // For notifications
@@ -90,68 +73,6 @@ var style = {
       marginLeft: -(defaultWidth / 2)
     }
   },
-
-  NotificationItem: {
-    DefaultStyle: {
-      position: "relative",
-      width: "100%",
-      cursor: "pointer",
-      borderRadius: "4px",
-      fontSize: "14px",
-      margin: "10px 0 0",
-      padding: "10px",
-      display: "block",
-      WebkitBoxSizing: "border-box",
-      MozBoxSizing: "border-box",
-      boxSizing: "border-box",
-      opacity: 0,
-      transition: "all 0.5s ease-in-out",
-      WebkitTransform: "translate3d(0, 0, 0)",
-      transform: "translate3d(0, 0, 0)",
-      willChange: "transform, opacity",
-
-      isHidden: {
-        opacity: 0
-      },
-
-      isVisible: {
-        opacity: 1
-      }
-    },
-
-    success: {
-      borderTop: 0,
-      backgroundColor: "#a1e82c",
-      WebkitBoxShadow: 0,
-      MozBoxShadow: 0,
-      boxShadow: 0
-    },
-
-    error: {
-      borderTop: 0,
-      backgroundColor: "#fc727a",
-      WebkitBoxShadow: 0,
-      MozBoxShadow: 0,
-      boxShadow: 0
-    },
-
-    warning: {
-      borderTop: 0,
-      backgroundColor: "#ffbc67",
-      WebkitBoxShadow: 0,
-      MozBoxShadow: 0,
-      boxShadow: 0
-    },
-
-    info: {
-      borderTop: 0,
-      backgroundColor: "#63d8f1",
-      WebkitBoxShadow: 0,
-      MozBoxShadow: 0,
-      boxShadow: 0
-    }
-  },
-
   Title: {
     DefaultStyle: {
       fontSize: "30px",
@@ -266,14 +187,14 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "Name", "Salary", "Country", "City"];
+const thArray = ["Grp", "Cuentas", "", "Valor", "Subcuentas", "Valor", "Total"];
 const tdArray = [
-  ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-  ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-  ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-  ["4", "Philip Chaney", "$38,735", "Korea, South", "Overland Park"],
-  ["5", "Doris Greene", "$63,542", "Malawi", "Feldkirchen in Kärnten"],
-  ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+  ["1", "Test", "", "Test", "Test", "Tets", "Test"],
+  ["2", "Test", "", "Test", "Test", "Tets", "Test"],
+  ["3", "Test", "", "Test", "Test", "Tets", "Test"],
+  ["4", "Test", "", "Test", "Test", "Tets", "Test"],
+  ["5", "Test", "", "Test", "Test", "Tets", "Test"],
+  ["6", "Test", "", "Test", "Test", "Tets", "Test"]
 ];
 
 //

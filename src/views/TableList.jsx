@@ -1,22 +1,9 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { Component } from "react";
+// import Viewer from '@phuocng/react-pdf-viewer';
 import { Grid, Row, Col, Table } from "react-bootstrap";
+import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
+
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 
 import Card from "components/Card/Card.jsx";
 import { thArray, tdArray } from "variables/Variables.jsx";
@@ -27,67 +14,94 @@ class TableList extends Component {
       <div className="content">
         <Grid fluid>
           <Row>
-            <Col md={12}>
+            <Col md={6}>
               <Card
-                title="Striped Table with Hover"
-                category="Here is a subtitle for this table"
+                title="Reclasificado informacion financiera"
+                category="Subtitulo"
                 ctTableFullWidth
                 ctTableResponsive
                 content={
+                  // <Table striped hover>
+                  //   <thead>
+                  //     <tr>
+                  //       {thArray.map((prop, key) => {
+                  //         return <th key={key}>{prop}</th>;
+                  //       })}
+                  //     </tr>
+                  //   </thead>
+                  //   <tbody>
+                  //     {tdArray.map((prop, key) => {
+                  //       return (
+                  //         <tr key={key}>
+                  //           {prop.map((prop, key) => {
+                  //             return <td key={key}>{prop}</td>;
+                  //           })}
+                  //         </tr>
+                  //       );
+                  //     })}
+                  //   </tbody>
+                  // </Table>
                   <Table striped hover>
                     <thead>
                       <tr>
-                        {thArray.map((prop, key) => {
-                          return <th key={key}>{prop}</th>;
-                        })}
+                        <th>Grp</th>
+                        <th>Cuentas</th>
+                        <th></th>
+                        <th>Valor</th>
+                        <th>Subcuentas</th>
+                        <th>Valor</th>
+                        <th>Total</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {tdArray.map((prop, key) => {
-                        return (
-                          <tr key={key}>
-                            {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
-                            })}
-                          </tr>
-                        );
-                      })}
+                      <tr>
+                        <td>1</td>
+                        <td>Test</td>
+                        <td></td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Test</td>
+                        <td></td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Test</td>
+                        <td></td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Test</td>
+                        <td></td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                      </tr>
                     </tbody>
                   </Table>
                 }
               />
             </Col>
 
-            <Col md={12}>
-              <Card
-                plain
-                title="Striped Table with Hover"
-                category="Here is a subtitle for this table"
-                ctTableFullWidth
-                ctTableResponsive
-                content={
-                  <Table hover>
-                    <thead>
-                      <tr>
-                        {thArray.map((prop, key) => {
-                          return <th key={key}>{prop}</th>;
-                        })}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {tdArray.map((prop, key) => {
-                        return (
-                          <tr key={key}>
-                            {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
-                            })}
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </Table>
-                }
-              />
+            <Col md={6}>
+              <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.3.200/build/pdf.worker.min.js">
+                  <div style={{ height: '1050px' }}>
+                      <Viewer fileUrl={`${process.env.PUBLIC_URL}/pdf-open-parameters.pdf`} />
+                  </div>
+              </Worker>
             </Col>
           </Row>
         </Grid>

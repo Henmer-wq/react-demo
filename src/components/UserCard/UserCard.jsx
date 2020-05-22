@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { Component } from "react";
 import {ProgressBar} from 'react-bootstrap';
 import axios from 'axios';
@@ -66,23 +49,8 @@ export class UserCard extends Component {
           <img src={this.props.bgImage} alt="..." />
         </div>
         <div className="content">
-          <div className="author">
-            <a href="#pablo">
-              <img
-                className="avatar border-gray"
-                src={this.state.avatar}
-                alt="..."
-              />
-              <input type="file" className="form-control profile-pic-uploader" onChange={this.uploadFile} />
+        <input type="file" className="form-control profile-pic-uploader" onChange={this.uploadFile} />
               { uploadPercentage > 0 && <ProgressBar now={uploadPercentage} active label={`${uploadPercentage}%`} /> }
-
-              <h4 className="title">
-                {this.props.name}
-                <br />
-                <small>{this.props.userName}</small>
-              </h4>
-            </a>
-          </div>
           <p className="description text-center">{this.props.description}</p>
         </div>
         <hr />
