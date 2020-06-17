@@ -1,0 +1,46 @@
+
+.btn.large,
+.btn-two.large,
+.btn-effect.large {
+  padding: 20px 30px;
+  font-size: 10px;
+  margin: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  border: none;
+}
+.btn.small,
+.btn-two.small,
+.btn-gradient.small,
+.btn-effect.small {
+  padding: 8px 11px;
+  font-size: 14px;
+  margin: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-gradient.cyan {
+  background: linear-gradient(rgba(66, 66, 66, 0.78) 0%, rgba(66, 66, 66, 0.78) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1bbcc2', endColorstr='#18a3a8', GradientType=0);
+}
+
+.btn-gradient.blue {
+  background: linear-gradient(rgba(66, 66, 66, 0.78) 0%, rgba(66, 66, 66, 0.78) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6698cb', endColorstr='#5c8ab8', GradientType=0 );
+}
+.btn-gradient.purple {
+  background: linear-gradient(rgba(66, 66, 66, 0.78) 0%, rgba(66, 66, 66, 0.78) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb99c5', endColorstr='#b586b0', GradientType=0 );
+}
+
+.btn-gradient.cyan:active {
+  background: #169499;
+}
+.btn-gradient.blue:active {
+  background: #608fbf;
+}
+.btn-gradient.purple:active {
+  background: #bd8eb7;
+}

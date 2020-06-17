@@ -6,7 +6,7 @@ const dashboardRoutes = [
   {
     path: "/upload",
     name: "Upload File",
-    icon: "pe-7s-user",
+    icon: "pe-7s-upload",
     component: UserProfile,
     layout: "/admin"
   },

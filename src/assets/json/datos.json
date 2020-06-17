@@ -1,0 +1,56 @@
+[
+   {
+      "id":"1",
+      "nombre":"CUENTA 1",
+      "stock":"35",
+      "precio":"5.00",
+      "url":"torta-de-chocolate",
+      "img":"89",
+      "fecha":"2019-06-17 15:56:23"
+   },
+   {
+      "id":"2",
+      "nombre":"CUENTA 2",
+      "stock":"45",
+      "precio":"4.50",
+      "url":"pie-de-manzana",
+      "img":"91",
+      "fecha":"2018-08-11 16:25:33"
+   },
+   {
+      "id":"3",
+      "nombre":"CUENTA 3",
+      "stock":"36",
+      "precio":"2.50",
+      "url":"arroz-con-leche",
+      "img":"91",
+      "fecha":"2018-08-11 16:25:36"
+   },
+   {
+      "id":"4",
+      "nombre":"CUENTA 4",
+      "stock":"60",
+      "precio":"1.50",
+      "url":"gelatina-de-fresa",
+      "img":"89",
+      "fecha":"2018-08-11 16:25:39"
+   },
+   {
+      "id":"5",
+      "nombre":"CUENTA 5",
+      "stock":"26",
+      "precio":"6.00",
+      "url":"suspiro-a-la-limeña",
+      "img":"91",
+      "fecha":"2019-06-17 15:58:43"
+   },
+   {
+      "id":"6",
+      "nombre":"CUENTA 6",
+      "stock":"50",
+      "precio":"3.00",
+      "url":"mazamorra-morada",
+      "img":"91",
+      "fecha":"2018-08-11 16:25:45"
+   }
+]

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 // import Viewer from '@phuocng/react-pdf-viewer';
 import { Grid, Row, Col, Table } from "react-bootstrap";
-import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
-
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
-
 import Card from "components/Card/Card.jsx";
-import { thArray, tdArray } from "variables/Variables.jsx";
+import Zoom from "components/Zoom/Zoom.jsx";
+import Datos from "components/Table/Table";
+// import { thArray, tdArray } from "variables/Variables.jsx";
 
 class TableList extends Component {
   render() {
@@ -15,8 +13,9 @@ class TableList extends Component {
         <Grid fluid>
           <Row>
             <Col md={6}>
+            <Datos/>
               <Card
-                title="Reclasificado informacion financiera"
+                title="Example"
                 category="Subtitulo"
                 ctTableFullWidth
                 ctTableResponsive
@@ -42,6 +41,7 @@ class TableList extends Component {
                   //   </tbody>
                   // </Table>
                   <Table striped hover>
+{/* 
                     <thead>
                       <tr>
                         <th>Grp</th>
@@ -90,18 +90,14 @@ class TableList extends Component {
                         <td>Test</td>
                         <td>Test</td>
                       </tr>
-                    </tbody>
+                      
+                    </tbody> */}
                   </Table>
                 }
               />
             </Col>
-
             <Col md={6}>
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.3.200/build/pdf.worker.min.js">
-                  <div style={{ height: '1050px' }}>
-                      <Viewer fileUrl={`${process.env.PUBLIC_URL}/pdf-open-parameters.pdf`} />
-                  </div>
-              </Worker>
+              <Zoom/>
             </Col>
           </Row>
         </Grid>
