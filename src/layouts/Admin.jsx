@@ -10,7 +10,7 @@ import Sidebar from "components/Sidebar/Sidebar";
 import routes from "routes.js";
 
 import image from "assets/img/sidebar-3.jpg";
-import FullPageLoader from "components/FullPageLoader/FullPageLoader";
+// import FullPageLoader from "components/FullPageLoader/FullPageLoader";
 
 class Admin extends Component {
   constructor(props) {
@@ -76,7 +76,7 @@ class Admin extends Component {
           <Switch>{this.getRoutes(routes)}</Switch>
           <Footer />
         </div>
-        <FullPageLoader />
+        {/* <FullPageLoader /> */}
         
       </div>
     );

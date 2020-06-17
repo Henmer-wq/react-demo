@@ -14,19 +14,19 @@ import { pdfjs } from 'react-pdf';
 
 import AdminLayout from "layouts/Admin.jsx";
 
-import { Provider } from "react-redux";
-import configureStore from "./store";
+// import { Provider } from "react-redux";
+// import configureStore from "./store";
 
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 ReactDOM.render(
-  <Provider store={configureStore()}>
+  // <Provider store={configureStore()}>
     <BrowserRouter>
       <Switch>
         <Route path="/admin" render={props => <AdminLayout {...props} />} />
         <Redirect from="/" to="/admin/upload" />
       </Switch>
-    </BrowserRouter>
-  </Provider>,
+    </BrowserRouter>,
+  // </Provider>,
   document.getElementById("root")
 );
